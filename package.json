@@ -1,0 +1,15 @@
+{
+  "name": "jkcss-700-beta-2",
+  "version": "1.0.0",
+  "description": "JKCSS v700 beta",
+  "keywords": [
+    "JKCSS"
+  ],
+  "license": "ISC",
+  "author": "jehankandy",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
