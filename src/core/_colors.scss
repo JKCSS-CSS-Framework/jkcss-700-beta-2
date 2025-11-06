@@ -1,0 +1,19 @@
+// ========================================
+// JKCSS 7.0.0 – Color Utilities
+// ========================================
+
+@use "variables" as *;
+
+@each $name, $color in $colors {
+    .text-#{$name} {
+        color: #{$color};
+    }
+
+    .bg-#{$name} {
+        background-color: #{$color};
+    }
+
+    .border-#{$name} {
+        border-color: #{$color};
+    }
+}

@@ -1,0 +1,46 @@
+// ========================================
+// JKCSS 7.0.0 – Variables
+// ========================================
+
+// Color map
+$colors: (
+    "red-500": #ef4444,
+    "blue-500": #3b82f6,
+    "green-500": #22c55e,
+    "gray-700": #374151,
+    "yellow-400": #facc15
+);
+
+// Font sizes
+$font-sizes: (
+    "sm": 0.875rem,
+    "base": 1rem,
+    "lg": 1.125rem,
+    "xl": 1.25rem,
+    "2xl": 1.5rem
+);
+
+// Spacing scale
+$spacing: (
+    1: 0.25rem,
+    2: 0.5rem,
+    3: 0.75rem,
+    4: 1rem,
+    5: 1.25rem
+);
+
+// Border radius
+$radii: (
+    sm: 4px,
+    md: 8px,
+    lg: 16px
+);
+
+// Breakpoints
+$screens: (
+    sm: 640px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1280px,
+    "2xl": 1536px
+);
