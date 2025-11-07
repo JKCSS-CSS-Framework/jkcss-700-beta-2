@@ -1,0 +1,137 @@
+// Background color generator
+@mixin generate-bg-classes($colors) {
+    @each $name, $shades in $colors {
+        @each $shade, $value in $shades {
+            .bg-#{$name}-#{$shade} {
+                background-color: #{$value} !important;
+            }
+        }
+    }
+}
+
+// Text color generator
+@mixin generate-text-classes($colors) {
+    @each $name, $shades in $colors {
+        @each $shade, $value in $shades {
+            .text-#{$name}-#{$shade} {
+                color: #{$value} !important;
+            }
+        }
+    }
+}
+
+// Spacing utilities
+@mixin generate-spacing-classes($scale) {
+    @each $key, $val in $scale {
+        .m-#{$key} {
+            margin: #{$val} !important;
+        }
+
+        .mx-#{$key} {
+            margin-left: #{$val} !important;
+            margin-right: #{$val} !important;
+        }
+
+        .my-#{$key} {
+            margin-top: #{$val} !important;
+            margin-bottom: #{$val} !important;
+        }
+
+        .mt-#{$key} {
+            margin-top: #{$val} !important;
+        }
+
+        .mb-#{$key} {
+            margin-bottom: #{$val} !important;
+        }
+
+        .ml-#{$key} {
+            margin-left: #{$val} !important;
+        }
+
+        .mr-#{$key} {
+            margin-right: #{$val} !important;
+        }
+
+        .p-#{$key} {
+            padding: #{$val} !important;
+        }
+
+        .px-#{$key} {
+            padding-left: #{$val} !important;
+            padding-right: #{$val} !important;
+        }
+
+        .py-#{$key} {
+            padding-top: #{$val} !important;
+            padding-bottom: #{$val} !important;
+        }
+
+        .pt-#{$key} {
+            padding-top: #{$val} !important;
+        }
+
+        .pb-#{$key} {
+            padding-bottom: #{$val} !important;
+        }
+
+        .pl-#{$key} {
+            padding-left: #{$val} !important;
+        }
+
+        .pr-#{$key} {
+            padding-right: #{$val} !important;
+        }
+    }
+}
+
+// Rounded corners
+@mixin generate-rounded-classes($radius-scale) {
+    @each $name, $val in $radius-scale {
+        @if $name ==DEFAULT {
+            .rounded {
+                border-radius: #{$val} !important;
+            }
+        }
+
+        @else {
+            .rounded-#{$name} {
+                border-radius: #{$val} !important;
+            }
+        }
+    }
+}
+
+// Shadows
+@mixin generate-shadow-classes($shadow-scale) {
+    @each $name, $val in $shadow-scale {
+        @if $name ==DEFAULT {
+            .shadow {
+                box-shadow: #{$val} !important;
+            }
+        }
+
+        @else {
+            .shadow-#{$name} {
+                box-shadow: #{$val} !important;
+            }
+        }
+    }
+}
+
+// Typography
+@mixin generate-font-size-classes($font-sizes) {
+    @each $name, $val in $font-sizes {
+        .text-#{$name} {
+            font-size: #{$val} !important;
+        }
+    }
+}
+
+@mixin generate-font-weight-classes($font-weights) {
+    @each $name, $val in $font-weights {
+        .font-#{"" + $name} {
+            font-weight: #{$val} !important;
+        }
+    }
+}
