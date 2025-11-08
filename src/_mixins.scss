@@ -3,7 +3,7 @@
     @each $name, $shades in $colors {
         @each $shade, $value in $shades {
             .bg-#{$name}-#{$shade} {
-                background-color: #{$value} !important;
+                background-color: #{$value} ;
             }
         }
     }
@@ -14,7 +14,7 @@
     @each $name, $shades in $colors {
         @each $shade, $value in $shades {
             .text-#{$name}-#{$shade} {
-                color: #{$value} !important;
+                color: #{$value} ;
             }
         }
     }
@@ -24,63 +24,63 @@
 @mixin generate-spacing-classes($scale) {
     @each $key, $val in $scale {
         .m-#{$key} {
-            margin: #{$val} !important;
+            margin: #{$val} ;
         }
 
         .mx-#{$key} {
-            margin-left: #{$val} !important;
-            margin-right: #{$val} !important;
+            margin-left: #{$val} ;
+            margin-right: #{$val} ;
         }
 
         .my-#{$key} {
-            margin-top: #{$val} !important;
-            margin-bottom: #{$val} !important;
+            margin-top: #{$val} ;
+            margin-bottom: #{$val} ;
         }
 
         .mt-#{$key} {
-            margin-top: #{$val} !important;
+            margin-top: #{$val} ;
         }
 
         .mb-#{$key} {
-            margin-bottom: #{$val} !important;
+            margin-bottom: #{$val} ;
         }
 
         .ml-#{$key} {
-            margin-left: #{$val} !important;
+            margin-left: #{$val} ;
         }
 
         .mr-#{$key} {
-            margin-right: #{$val} !important;
+            margin-right: #{$val} ;
         }
 
         .p-#{$key} {
-            padding: #{$val} !important;
+            padding: #{$val} ;
         }
 
         .px-#{$key} {
-            padding-left: #{$val} !important;
-            padding-right: #{$val} !important;
+            padding-left: #{$val} ;
+            padding-right: #{$val} ;
         }
 
         .py-#{$key} {
-            padding-top: #{$val} !important;
-            padding-bottom: #{$val} !important;
+            padding-top: #{$val} ;
+            padding-bottom: #{$val} ;
         }
 
         .pt-#{$key} {
-            padding-top: #{$val} !important;
+            padding-top: #{$val} ;
         }
 
         .pb-#{$key} {
-            padding-bottom: #{$val} !important;
+            padding-bottom: #{$val} ;
         }
 
         .pl-#{$key} {
-            padding-left: #{$val} !important;
+            padding-left: #{$val} ;
         }
 
         .pr-#{$key} {
-            padding-right: #{$val} !important;
+            padding-right: #{$val};
         }
     }
 }
@@ -90,13 +90,13 @@
     @each $name, $val in $radius-scale {
         @if $name ==DEFAULT {
             .rounded {
-                border-radius: #{$val} !important;
+                border-radius: #{$val} ;
             }
         }
 
         @else {
             .rounded-#{$name} {
-                border-radius: #{$val} !important;
+                border-radius: #{$val};
             }
         }
     }
@@ -107,13 +107,13 @@
     @each $name, $val in $shadow-scale {
         @if $name ==DEFAULT {
             .shadow {
-                box-shadow: #{$val} !important;
+                box-shadow: #{$val};
             }
         }
 
         @else {
             .shadow-#{$name} {
-                box-shadow: #{$val} !important;
+                box-shadow: #{$val};
             }
         }
     }
@@ -123,7 +123,7 @@
 @mixin generate-font-size-classes($font-sizes) {
     @each $name, $val in $font-sizes {
         .text-#{$name} {
-            font-size: #{$val} !important;
+            font-size: #{$val};
         }
     }
 }
@@ -131,7 +131,7 @@
 @mixin generate-font-weight-classes($font-weights) {
     @each $name, $val in $font-weights {
         .font-#{"" + $name} {
-            font-weight: #{$val} !important;
+            font-weight: #{$val};
         }
     }
 }
